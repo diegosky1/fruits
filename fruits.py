@@ -25,15 +25,15 @@ pad4alreadyPressed = False
 pygame.mixer.pre_init(44100, -16, 12, 512)
 pygame.init()
 
-do = pygame.mixer.Sound('sounds/do.wav')
+do = pygame.mixer.Sound('samples/kick.wav')
 do.set_volume(.65);
-re = pygame.mixer.Sound('sounds/re.wav')
+re = pygame.mixer.Sound('samples/snare.wav')
 re.set_volume(.65);
-mi = pygame.mixer.Sound('sounds/mi.wav')
+mi = pygame.mixer.Sound('samples/open.wav')
 mi.set_volume(.65);
-fa = pygame.mixer.Sound('sounds/fa.wav')
+fa = pygame.mixer.Sound('samples/closed.wav')
 fa.set_volume(.65);
-sol = pygame.mixer.Sound('sounds/sol.wav')
+sol = pygame.mixer.Sound('samples/clap.wav')
 sol.set_volume(.65);
 
 while True:
