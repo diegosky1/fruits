@@ -47,6 +47,9 @@ while True:
         print "Pad 0 pressed"
         do.play()
     pad0alreadyPressed = pad0pressed
+    print "out of if"
+    print pad0pressed
+    print pad0alreadyPressed
 
     if pad1pressed and not pad1alreadyPressed:
         print "Pad 1 pressed"
