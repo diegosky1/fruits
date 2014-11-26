@@ -25,16 +25,16 @@ pad4alreadyPressed = False
 pygame.mixer.pre_init(44100, -16, 12, 512)
 pygame.init()
 
-do = pygame.mixer.Sound('samples/kick.wav')
-do.set_volume(.65);
-re = pygame.mixer.Sound('samples/snare.wav')
-re.set_volume(.65);
-mi = pygame.mixer.Sound('samples/open.wav')
-mi.set_volume(.65);
-fa = pygame.mixer.Sound('samples/closed.wav')
-fa.set_volume(.65);
-sol = pygame.mixer.Sound('samples/clap.wav')
-sol.set_volume(.65);
+do = pygame.mixer.Sound('samples/Do-medio.wav')
+do.set_volume(85);
+re = pygame.mixer.Sound('samples/Re-medio.wav')
+re.set_volume(85);
+mi = pygame.mixer.Sound('samples/Mi-medio.wav')
+mi.set_volume(85);
+fa = pygame.mixer.Sound('samples/Fa-medio.wav')
+fa.set_volume(85);
+sol = pygame.mixer.Sound('samples/Sol-medio.wav')
+sol.set_volume(85);
 
 while True:
     pad0pressed = not GPIO.input(pad0)
@@ -47,9 +47,6 @@ while True:
         print "Pad 0 pressed"
         do.play()
     pad0alreadyPressed = pad0pressed
-    print "out of if"
-    print pad0pressed
-    print pad0alreadyPressed
 
     if pad1pressed and not pad1alreadyPressed:
         print "Pad 1 pressed"
